@@ -3,6 +3,7 @@
   "description": "Gatsby starter MDX basic",
   "version": "1.0.0",
   "author": "Chris Biscardi <chris@christopherbiscardi.com>",
+  "homepage": "https://digoonrails.github.io/mysite",
   "dependencies": {
     "@mdx-js/mdx": "^1.1.5",
     "@mdx-js/react": "^1.1.5",
@@ -29,10 +30,14 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "yarn run build && gh-pages -d public"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "^1.18.2"
   },
   "repository": {
